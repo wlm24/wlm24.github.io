@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Liming Wang</title>
+<meta name="description" content="Liming Wang — undergraduate researcher in the Yao Class, IIIS, Tsinghua University. Applied cryptography, payment-channel networks, and payment infrastructure for LLM multi-agent systems.">
+<style>
+  :root {
+    --bg: #ffffff;
+    --text: #1f2328;
+    --muted: #57606a;
+    --accent: #0f4c9c;
+    --rule: #d8dee4;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #101418;
+      --text: #e6e9ec;
+      --muted: #9aa4ae;
+      --accent: #7ab0f5;
+      --rule: #2d333b;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.65 Georgia, "Times New Roman", serif;
+  }
+  main {
+    max-width: 44rem;
+    margin: 0 auto;
+    padding: 4rem 1.25rem 3rem;
+  }
+  h1 {
+    font-size: 2rem;
+    margin: 0 0 0.25rem;
+    font-weight: normal;
+    letter-spacing: 0.01em;
+  }
+  .affiliation {
+    color: var(--muted);
+    margin: 0 0 0.6rem;
+  }
+  .links {
+    margin: 0 0 2.2rem;
+    font-size: 0.95rem;
+  }
+  .links a { margin-right: 1.1rem; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  h2 {
+    font-size: 1.05rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 0.35rem;
+    margin: 2.4rem 0 1rem;
+  }
+  .paper { margin-bottom: 1.6rem; }
+  .paper .title { font-weight: bold; margin: 0; }
+  .paper .venue {
+    color: var(--muted);
+    font-style: italic;
+    font-size: 0.95rem;
+    margin: 0.1rem 0 0.35rem;
+  }
+  .paper .desc { margin: 0; font-size: 0.97rem; }
+  ul.honors { padding-left: 1.2rem; margin: 0; }
+  ul.honors li { margin-bottom: 0.4rem; }
+  .year { color: var(--muted); font-size: 0.92rem; white-space: nowrap; }
+  footer {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+  small.sc { font-variant: small-caps; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Liming Wang</h1>
+  <p class="affiliation">Yao Class, Institute for Interdisciplinary Information Sciences (IIIS), Tsinghua University</p>
+  <p class="links">
+    <a href="mailto:wlm24@mails.tsinghua.edu.cn">Email</a>
+    <a href="https://github.com/wlm24">GitHub</a>
+    <a href="cv.pdf">CV</a>
+  </p>
+
+  <h2>About</h2>
+  <p>
+    I am a third-year undergraduate in the
+    <a href="https://iiis.tsinghua.edu.cn/en/">Yao Class</a> at Tsinghua University,
+    the CS program founded by Turing Award laureate Andrew Chi-Chih Yao.
+    I work on applied cryptography and the economics of autonomous-agent systems:
+    payment-channel networks, Bitcoin protocol design, and payment infrastructure
+    for LLM multi-agent systems.
+  </p>
+
+  <h2>Manuscripts Under Review</h2>
+
+  <div class="paper">
+    <p class="title"><small class="sc">Colophon</small>: Verifiable Agentic Payment to an Unknown Recipient Set</p>
+    <p class="venue">Under review at USENIX Security 2027 · First author</p>
+    <p class="desc">
+      The first trustless payment protocol for a recipient set that only takes shape at
+      runtime: before the payment becomes irrevocable, the payer obtains a cryptographic
+      certificate of who was paid and how much, without trusting any intermediary.
+      Realized on Bitcoin script extended with two near-future opcodes (CSFS, OP_CAT),
+      at collateral independent of delegation depth and fan-out.
+    </p>
+  </div>
+
+  <div class="paper">
+    <p class="title">No API Key, No Problem: Enabling Agent-Centric Payments via Payment Channels</p>
+    <p class="venue">Under review at NeurIPS 2026 · First author</p>
+    <p class="desc">
+      Cost-aware payment middleware that replaces API-key billing in multi-agent systems
+      with trust-minimized off-chain micropayments. Profiled 6,589 LLM calls across 270
+      tasks on three MAS frameworks and three backbone models; 0.6&ndash;1.4% runtime
+      overhead and 35&ndash;250&times; lower settlement cost than on-chain baselines.
+    </p>
+  </div>
+
+  <h2>Honors</h2>
+  <ul class="honors">
+    <li>Chinese Mathematical Olympiad, First Prize; <b>National Training Team</b> (ranked 18th) <span class="year">— 2023</span></li>
+    <li>Top 100 Youth Commentators, Xinmin Evening News <span class="year">— 2023</span></li>
+  </ul>
+
+  <footer>Last updated August 2026.</footer>
+</main>
+</body>
+</html>
