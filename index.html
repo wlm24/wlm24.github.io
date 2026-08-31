@@ -49,6 +49,17 @@
     font-size: 0.95rem;
   }
   .links a { margin-right: 1.1rem; }
+  .portrait {
+    float: right;
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 0.4rem 0 0.8rem 1.4rem;
+  }
+  @media (max-width: 540px) {
+    .portrait { width: 126px; height: 126px; margin: 0.2rem 0 0.6rem 1rem; }
+  }
   a { color: var(--accent); text-decoration: none; }
   a:hover { text-decoration: underline; }
   h2 {
@@ -86,6 +97,7 @@
 </head>
 <body>
 <main>
+  <img class="portrait" src="photo.jpg" alt="Liming Wang">
   <h1>Liming Wang</h1>
   <p class="affiliation">Yao Class, Institute for Interdisciplinary Information Sciences (IIIS), Tsinghua University</p>
   <p class="links">
@@ -100,8 +112,15 @@
     <a href="https://iiis.tsinghua.edu.cn/en/">Yao Class</a> at Tsinghua University,
     the CS program founded by Turing Award laureate Andrew Chi-Chih Yao.
     I work on applied cryptography and the economics of autonomous-agent systems:
-    payment-channel networks, Bitcoin protocol design, and payment infrastructure
-    for LLM multi-agent systems.
+    payment-channel networks, trustless protocol design on Bitcoin, and payment
+    infrastructure for LLM multi-agent systems.
+  </p>
+  <p>
+    Outside research, I have played right back on the IIIS soccer team since my
+    first year &mdash; still the best cure I know for a stuck proof &mdash; and
+    also play for the IIIS volleyball team. Off the field, I am on the Tsinghua
+    debate team (Freshman Cup champion) and enjoy tennis, table tennis, and
+    traveling.
   </p>
 
   <h2>Manuscripts Under Review</h2>
